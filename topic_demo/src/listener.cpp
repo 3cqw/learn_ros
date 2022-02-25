@@ -17,6 +17,7 @@ int main(int argc, char **argv)
   //void(*)(M):回调函数指针，M是函数的参数，是一个模板;
   ros::Subscriber sub = nh.subscribe("gps_info", 1, gpsCallback);
 
+  //进入订阅话题事件循环
   ros::spin();
 
   return 0;
